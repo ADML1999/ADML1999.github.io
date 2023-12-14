@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:wght@900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head-neon {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 20, 20);
+}
+.text-neon {
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s linear;
+    color: transparent;
+    -webkit-text-stroke: 2px red;
+    background-image: linear-gradient(to left, red, rgb(226, 33, 33), black, rgb(35, 31, 31));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 20s linear infinite;
+    display: flex;
+    align-items: center;
+    padding-left: 40vw;
+}
+@keyframes move {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+.text-neon:hover {
+    text-shadow: 0 0 10px rgba(255, 0, 0, .5),
+                 0 0 20px rgba(255, 0, 0, .5),
+                 0 0 40px rgba(255, 0, 0, .5),
+                 0 0 80px rgba(255, 0, 0, .5),
+                 0 0 160px rgba(255, 0, 0, .5),
+                 0 0 320px rgba(255, 0, 0, .5); 
+}
+
+.menu-neon {
+    width: 0px;
+    height: 100vh;
+    padding: 40px 0 40px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 5px 0 10px red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+.menu-neon:hover{
+    width: 200px;
+}
+.bttn-hamburguer {
+    width: 100%;
+    padding-left: 10px;
+    position: fixed;
+    top: 0;
+}
+.bttn-hamburguer i {
+    color: red;
+    cursor: pointer;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+}
+
+ul {
+    list-style: none;
+}
+ul li.item-menu {
+    transition: 1s;
+}
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+}
+ul li.item-menu:hover {
+    text-shadow: 0 0 10px rgba(255, 0, 0, .5),
+                 0 0 20px rgba(255, 0, 0, .5),
+                 0 0 40px rgba(255, 0, 0, .5),
+                 0 0 80px rgba(255, 0, 0, .5),
+                 0 0 160px rgba(255, 0, 0, .5),
+                 0 0 320px rgba(255, 0, 0, .5);   
+}
+
+.main-content {
+    width: 100vw;
+    overflow: hidden;
+}
+.main-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.main-img > img {
+    width: 748px;
+    height: 424px;
+}
+.main-texto {
+    padding: 10px;
+    text-align: center;
+}
