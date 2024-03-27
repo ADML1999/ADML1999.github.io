@@ -9,6 +9,9 @@
 .menu {
     position: fixed;
 }
+.menu > h1 {
+    padding-right: 300px;
+}
 .menu , .footer {
     width: 100vw;
     height: 10vh;
@@ -43,9 +46,8 @@
 .main {
     width: 100vw;
     background-color: wheat;
-    text-align: center;
 }
-.inicio , .sobre , .contato {
+#div1 , #div2 , #div3 {
     width: 100vw;
     height: 100vh;
     border: 1px solid black;
@@ -53,7 +55,41 @@
     justify-content: center;
     align-items: center;
 }
-#div2 {
-    background-color: black;
-    color: wheat;
+#inicio , #sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#sobre {
+    flex-direction: row-reverse;
+}
+.perfil {
+    width: 25vw;
+    height: 50vh;
+    border-radius: 50%;
+    overflow: hidden
+}
+.perfil > img {
+    width: 350px;
+}
+.inicio {
+    width: 60vw;
+    height: 50vh;
+    margin-left: 20px;
+}
+.inicio > p , h2 {
+    margin-top: 20px;
+}
+.bgsobre > img {
+    width: 700px;
+    height: 700px;
+}
+.contato > ul > li > a{
+    font-size: 50px;
+    color: rgb(211, 24, 55);
 }
